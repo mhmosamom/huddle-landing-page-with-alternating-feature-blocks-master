@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1140px;
+    }    
+}
+
+/* start home */
+.home {
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-size: cover;
+    font-family: "Open Sans";
+    padding-bottom: 30px;
+}
+.top , .landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.top img {
+    height: 30px;
+}
+button {
+    width: 20%;
+    min-width: fit-content;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 150px;
+    cursor: pointer;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+.top button {
+    background-color: white;
+    border: 3px solid white;
+}
+.top button:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+.landing .intro {
+    font-family: sans-serif;
+    max-width: 433px;
+    
+}
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    min-width: 433px;
+}
+.intro p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    opacity: 0.5;
+}
+.landing img {
+    width: 55%;
+}
+.landing button , .join button {
+    color: hsl(193, 100%, 96%);
+    background-color: hsl(322, 100%, 66%);
+    border: 3px solid hsl(322, 100%, 66%);
+}
+.landing button:hover , .join button:hover{
+    opacity: 0.5;
+}
+/* ending home */
+/* starting features */
+.features {
+    padding: 20px 0 60px;
+}
+.service {
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.service div {
+    max-width: 450px;
+    min-width: 450px;
+}
+.service div h2 {
+    padding: 25px 25px 0 25px;
+}
+.service div p {
+    font-weight: 600;
+    opacity: 0.5;
+    padding: 25px;
+}
+.service img {
+    height: 100%;
+}
+.right {
+    order: 1;
+}
+/* ending features */
+/* strat footer */
+footer {
+    height: auto;
+    background-color: hsl(192, 100%, 9%);
+    position: relative;
+    padding: 120px 15px 40px;
+    color: hsl(193, 100%, 96%);
+}
+.join {
+    width: 50%;
+    min-width: 384px;
+    position: absolute;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20%;
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+}
+.join h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000;
+}
+.join button {
+    padding: 15px 30px;
+}
+.logo {
+    height: 30px;
+    margin-bottom: 15px;
+}
+.cols {
+    
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+.col-1 {
+    width: 38%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.col-1 img {
+    margin-right: 5px;
+}
+.col-1 img:nth-child(1) {
+    align-self: flex-start;
+    position: relative;
+    top: 20px;
+}
+.col-1 p {
+    width: 90%;
+}
+.col p {
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.col p:hover ,.copyr:hover , i:hover {
+    color: hsl(322, 100%, 66%);
+}
+.social i {
+    margin: 7px;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid hsl(193, 100%, 96%);
+    transition: 0.4s;
+    cursor: pointer;
+}
+i:hover {
+    border-color: hsl(322, 100%, 66%);
+}
+.copyr {    
+    opacity: 0.8;
+    width: 100%;
+    letter-spacing: 0.2px;
+    text-align: right;
+    transition: 0.4s;
+}
+/* ending footer */
+
+
+@media screen and (max-width: 991px) {
+    .landing , .service{
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+    .landing img {
+        width: 80%;
+    }
+    .intro {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .service div , .service div h1 , .service div p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .service div {
+        min-width: 365px;
+        max-width: 365px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .join {
+        margin-top: 70px;
+        max-width: 365px;
+    }
+    .cols {
+        display: block;
+    }
+    .social {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .social , .copyr {
+        text-align: center;
+    }
+    .cols , .col {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .col p {
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .body {
+        background-image: url(../images/bg-hero-mobile.svg);
+    }
+    .container , .landing , .intro , .intro img , .intro h1 , .service div , footer , .cols , .col {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .join {
+        width: 90%;
+        max-width: 90%;
+    }
+    .cols {
+        display: block;
+    }
+    .social {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .social , .copyr {
+        text-align: center;
+    }
+    .col p {
+        width: 93%;
+    }
+}
